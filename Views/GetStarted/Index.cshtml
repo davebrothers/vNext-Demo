@@ -1,0 +1,71 @@
+@model Dictionary<string, string>
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Get Started";
+}
+<p class="page-header">
+    <h1>Leaving Yosemite Basecamp</h1>
+</p>
+<div class="container">
+	
+	<div class="row">
+    <div class="col-md-8">
+		<h4>OSX Command Line Tools</h4>
+		<p>Downloadable from the Apple App Store</p>
+	</div>
+	<br/>
+	<div class="col-md-8">
+		<h4>Git</h4>
+		<p>DVCS application -- many of the tools you will need are available as git repositories.</p>
+		<a href="http://git-scm.com/downloads" class="btn btn-default">Git Downloads</a>
+	</div>
+	<br/>
+	<div class="col-md-8">
+		<h4>Homebrew</h4>
+		<p>
+			Installs from Terminal using Git and Ruby (which ships with OS X).<br/>
+			Places packages into <code>/usr/local/Cellar</code> and then symlinks the contents into <code>/usr/local/bin.</code></br>
+		</p>
+		<a href="http://brew.sh" class="btn btn-default">brew.sh</a>
+	</div>
+	<br/>
+	<div class="col-md-8">
+		<h4>Node</h4>
+		<p>
+			Super magical JavaScript do-things extravaganza.<br/>
+			Ends up being pretty crucial to development <br/>
+			Install via Homebrew: <code>brew install node</code>
+		</p>
+		<a href="http://nodejs.org" class="btn btn-default">nodejs.org</a>
+	</div>
+	<br/>
+	<div class="col-md-8">
+		<h4>DNVM</h4>
+		<p>
+			<strong>D</strong>>ot <strong>N</strong>et <strong>V</strong>ersion <strong>M</strong>anager<br/>
+			Command line tools that facilitate fetching and configuring .NET runtimes.<br/>
+			Install via Homebrew:<br/>
+			<code>brew tap aspnet/dnx</code><br/>
+			<code>brew update</code><br/>
+			<code>brew install dnvm</code><br/>
+			Add <code>source dnvm.sh</code> to .bash_profile<br/>
+			<code>dnvm upgrade</code><br/>
+			<code>dnvm list</code> will show you all available runtimes.
+		</p>
+		<a href="https://github.com/aspnet/dnvm" class="btn btn-default">DNVM on GitHub</a>
+	</div>
+	<br/>
+	<div class="col-md-8">
+		<h4>Visual Studio Code</h4>
+		<p>
+			Or your editor of choice (Atom, Brackets, Sublime, etc.)<br/>
+		</p>
+		<a href="http://code.visualstudio.com" class="btn btn-default">VS Code</a>
+	</div>
+	<br/>
+	<div class="col-md-8">
+		<h4>But Riiiicky!</h4>
+		<h5>@Html.ActionLink("I wanna start the show!", "NewProject", "GetStarted", null, new { @class = "btn btn-default" })</h5>
+	</div>
+</div>
+</div>

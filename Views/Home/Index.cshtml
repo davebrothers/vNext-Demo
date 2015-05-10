@@ -1,0 +1,19 @@
+﻿
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Home";
+}
+
+<div class="jumbotron">
+    <h1>Stranger in a Strange Land</h1>
+    <p class="lead">
+        <blockquote>
+            "You're right; no <i>human being</i> would stack books like this."<br/>
+            - Dr. Peter Venkman
+        </blockquote>
+    </p>
+    @Html.ActionLink("Tell me more!", "Index", "GetStarted", null, new { @class = "btn btn-primary" })
+</div>
+<div class="row">
+    
+</div>
