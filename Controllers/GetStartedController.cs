@@ -29,6 +29,9 @@ namespace MvcSample.Web
                 "<code>brew update</code><br/><code>brew install dnvm</code><br/>Add <code>source dnvm.sh</code> to .bash_profile<br/><code>dnvm upgrade</code><br/>" +
                 "<code>dnvm list</code> will show you all available runtimes.",
                 Link = "https://github.com/aspnet/dnvm", LinkText = "DNVM on GitHub"});
+                
+            vm.Add(new MacTool{ Name = "Visual Studio Code", Description = "Or your editor of choice (Atom, Brackets, Sublime, etc.)<br/>",
+                Link = "https://code.visualstudio.com", LinkText = "VS Code"});
             
             return View(vm);
         }

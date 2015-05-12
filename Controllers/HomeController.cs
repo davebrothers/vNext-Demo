@@ -8,5 +8,10 @@ namespace MvcSample.Web
         {
             return View();
         }
+        
+        public IActionResult NewHotness()
+        {
+            return View();
+        }
     }
 }
